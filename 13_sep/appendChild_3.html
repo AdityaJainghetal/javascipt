@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            width: 350px;
+            padding: 30px;
+            border: 4px solid rgb(47, 125, 151);
+        }
+    </style>
+
+<script>
+    function addmoreText(){
+    let obj=document.createElement("p");
+    obj.innerHTML="Enter subject: <input type='text'>";
+    document.getElementById("demo").appendChild(obj);
+
+    }
+</script>
+
+
+</head>
+<body>
+  <button onclick="addmoreText()">add more</button>
+    <br> <br>
+    <div id="demo">
+        <p>Enter Subject:  <input type="text"></p> 
+    </div>
+
+</body>
+</html>

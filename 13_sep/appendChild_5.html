@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        #demo{
+            width: 350px;
+            padding: 30px;
+            border: 4px solid rgb(47, 125, 151);
+        }
+    </style>
+
+<script>
+    function addmoreText(){
+    let obj=document.createElement("p");
+    obj.innerHTML="Enter subject: <input type='text' <button onclick='remove()'><i class='fa-solid fa-xmark'></i></button>";
+    document.getElementById("demo").appendChild(obj);
+   
+    }
+
+    function remove(button){
+        document.getElementById("demo").remove();
+    }
+
+
+    
+</script>
+
+
+</head>
+<body>
+  <button onclick="addmoreText()">add more</button>
+    <br> <br>
+    <div id="demo">
+        <p>Enter City:  <input type="text">  <button onclick="remove()"><i class="fa-solid fa-xmark"></i></button></p> 
+        
+    </div>
+
+</body>
+</html>

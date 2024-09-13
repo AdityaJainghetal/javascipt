@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        #demo {
+            width: 350px;
+            padding: 30px;
+            border: 4px solid rgb(47, 125, 151);
+        }
+    </style>
+
+    <script>
+        function addmoreText() {
+            let demoDiv = document.getElementById("demo");
+            let myobj = demoDiv.getElementsByTagName("p").length;
+
+            if (myobj >= 5) {
+                alert("You can only add up to 5 city.");
+                return;
+            }
+            let p = document.createElement("p");
+
+            p.innerHTML = "Enter city: <input type='text'> <button onclick='removeSubject(this)'><i class='fa-solid fa-xmark'></i></button>";
+            demoDiv.appendChild(p);
+        }
+
+        function removeSubject(button) {
+            button.parentElement.remove();
+        }
+
+        function remove() {
+            document.getElementById("demo").remove();
+        }
+    </script>
+
+</head>
+<body>
+    <button onclick="addmoreText()">Add More</button>
+    <br> <br>
+    <div id="demo">
+        <p>Enter City: <input type="text"> <button onclick="remove()"><i class="fa-solid fa-xmark"></i></button></p> 
+    </div>
+</body>
+</html>
