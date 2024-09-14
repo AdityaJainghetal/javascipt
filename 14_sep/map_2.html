@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+
+    <script>
+        const student=["Praveen","sanchit","aryan","samadin"];
+        let data="<ol>"
+        student.map(function(key){
+            data+="<li>"+key+"</li>";
+        })
+        data+="</ol>"
+        document.getElementById("demo").innerHTML=data;
+    </script>
+
+    
+</body>
+</html>

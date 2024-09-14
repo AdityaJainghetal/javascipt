@@ -15,25 +15,23 @@
 
     <script>
         function addmoreText() {
-            let demoDiv = document.getElementById("demo");
-            let myobj = demoDiv.getElementsByTagName("p").length;
-
+            var myobj=1;
             if (myobj >= 5) {
                 alert("You can only add up to 5 city.");
-                return;
             }
-            let p = document.createElement("p");
+            myobj++;
+            let demoDiv = document.createElement("p");
 
-            p.innerHTML = "Enter city: <input type='text'> <button onclick='removeSubject(this)'><i class='fa-solid fa-xmark'></i></button>";
-            demoDiv.appendChild(p);
+
+                    demoDiv.innerHTML=`Enter city: <input type='text'> <i class='fa-solid fa-xmark' onclick="remove()"></i>`;
+            document.getElementById("demo").appendChild(demoDiv);
+           
         }
 
-        function removeSubject(button) {
-            button.parentElement.remove();
-        }
+       
 
         function remove() {
-            document.getElementById("demo").remove();
+            document.getElementById("demo").removeChild(demo.childNodes[2]);
         }
     </script>
 
@@ -42,7 +40,7 @@
     <button onclick="addmoreText()">Add More</button>
     <br> <br>
     <div id="demo">
-        <p>Enter City: <input type="text"> <button onclick="remove()"><i class="fa-solid fa-xmark"></i></button></p> 
+        <p>Enter City: <input type="text"> </p> 
     </div>
 </body>
 </html>
