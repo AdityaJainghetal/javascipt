@@ -15,10 +15,12 @@
     </style>
 
     <script>
+        var myobj=1;
         function addmoreText() {
-            var myobj=1;
+            
             if (myobj >= 5) {
                 alert("You can only add up to 5 city.");
+                return;
             }
             myobj++;
             let demoDiv = document.createElement("p");
