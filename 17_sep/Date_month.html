@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const d= new Date();
+        document.write("<h1>"+d+"</h1");
+
+        const ans = d.getMonth();
+        const ans1 = d.getDay();
+
+
+
+//         let intervalId = setInterval(() => {
+//   console.log('This message appears every 2 seconds');
+// }, 1000);
+
+
+
+        const month=["jan","feb","mar","april","may","june","july","aug","sep","oct","nov","dec"]
+               document.write("<h1>",ans," : ",month[ans],"</h1>");
+        const day=["sun","mon","tus","wed","thus","fri","sat"];
+        document.write("<h1>",day[ans1],"</h1>");
+
+        // document.write("<h1>",intervalId,"</h1>");
+    </script>
+</body>
+</html>
