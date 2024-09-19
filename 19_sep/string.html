@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="sffadsssaaDGFFDGFSDFSaidbajdabsakjnjdadasda324233242323232323232242342324";
+        let strle=str.length;
+        document.write("<h1>",strle,"</h1>");
+        
+        let mystr="";
+        for(var i=0;i<=7;i++){
+            var mynum=Math.floor(Math.random()*73);
+           mystr+=str.charAt(mynum);
+        }
+
+        document.write("<h1> Random password: ",mystr,"</h1>")
+
+    </script>
+</body>
+</html>

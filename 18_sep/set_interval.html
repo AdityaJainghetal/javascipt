@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  const date = new Date();
+  document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+  document.getElementById("demo2").innerHTML = date.toDateString();
+
+}
+
+
+
+</script>
+
+
+    
+<h1>The Window Object</h1>
+<h2>The setInterval() Method</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+</body>
+</html>
