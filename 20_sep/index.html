@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #box{
+            width: 300px;
+            border: 3px solid rgb(24, 28, 29);
+            padding: 30px;
+            margin: auto;
+             background-color: rgb(45, 229, 165);
+            
+
+        }
+
+        #testbox{
+            width: 300px;
+            height: 50px;
+            border: 1px solid black;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            
+             
+
+        }
+
+        button{
+            padding: 10px;
+
+            font-size: 30px;
+            /* color: grey; */
+            margin: 10px;
+            cursor: pointer;
+            color: black;
+            font-size: 20px;
+            border-radius: 50%;
+            
+            
+
+
+        }
+        button:hover{
+            background-color: rgb(203, 203, 220);
+        }
+    </style>
+
+
+
+<script>
+    function dateRemove(){
+        let a=document.getElementById('testbox').value;
+        let mylen=a.length;
+        let ans=a.slice(0, mylen-1);
+        document.getElementById('testbox').value=ans;
+    }
+</script>
+</body>
+<div id="box">
+<input type="text" id="testbox" placeholder="0">
+
+<button id="btn1" onclick="document.getElementById('testbox').value+=document.getElementById('btn1').innerHTML">1</button>
+<button id="btn2" onclick="document.getElementById('testbox').value+=document.getElementById('btn2').innerHTML">2</button>
+<button id="btn3" onclick="document.getElementById('testbox').value+=document.getElementById('btn3').innerHTML">3</button>
+<button id="btn4" onclick="document.getElementById('testbox').value+=document.getElementById('btn4').innerHTML">4</button>
+<button id="btn5" onclick="document.getElementById('testbox').value+=document.getElementById('btn5').innerHTML">5</button>
+<button id="btn6" onclick="document.getElementById('testbox').value+=document.getElementById('btn6').innerHTML">6</button>
+<button id="btn7" onclick="document.getElementById('testbox').value+=document.getElementById('btn7').innerHTML">7</button>
+<button id="btn8" onclick="document.getElementById('testbox').value+=document.getElementById('btn8').innerHTML">8</button>
+<button id="btn9" onclick="document.getElementById('testbox').value+=document.getElementById('btn9').innerHTML">9</button>
+<button id="btn0" onclick="document.getElementById('testbox').value+=document.getElementById('btn0').innerHTML">0</button>
+<button id="btnpulus" onclick="document.getElementById('testbox').value+=document.getElementById('btnpulus').innerHTML">+</button>
+<button id="btnminus" onclick="document.getElementById('testbox').value+=document.getElementById('btnminus').innerHTML">-</button>
+<button id="btnmul" onclick="document.getElementById('testbox').value+=document.getElementById('btnmul').innerHTML">*</button>
+<button id="btndiv" onclick="document.getElementById('testbox').value+=document.getElementById('btndiv').innerHTML">/</button>
+<button onclick="document.getElementById('testbox').value=''">AC</button>
+
+
+<button onclick="document.getElementById('testbox').value=eval(document.getElementById('testbox').value)">=</button>
+
+
+<button onclick="dateRemove()">x</button>
+
+
+
+</div>
+</html>
+
+
