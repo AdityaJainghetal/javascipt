@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #line{
+            width: 10px;
+            height: 10px;
+            background-color: rgb(244, 21, 21);
+
+            
+        }
+    </style>
+    <div id="line">
+        
+    </div>
+    <script>
+        let mywidth =10;
+        var myInt;
+        function myCal(){
+            let obj= document.getElementById("line");
+            obj.style.width = mywidth + "px";
+            mywidth = mywidth +1;
+        }
+
+        function startNow(){
+            myInt = setInterval(myCal ,100)
+        }
+        function stopNow(){
+            clearInterval(myInt);
+        }
+
+    </script>
+
+<button onclick="startNow()">start here</button>
+<button onclick="stopNow()">stop now</button>
+</body>
+</html>

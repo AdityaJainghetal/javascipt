@@ -6,13 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="demo">Welcome</h1>
     <script>
-        let name=["raj","sonu", "pankaj","raju"];
-        console.log(name);
-        console.log(typeof(name));
-        let mynm = name.join(" * ");
-        console.log(mynm);
-        console.log(typeof(mynm));
+
+        function display(){
+            document.getElementById("demo").innerHTML+=" ,welcome to bhopal";
+        }
+
+
+        setInterval(display ,1000)
     </script>
+
+    
 </body>
 </html>

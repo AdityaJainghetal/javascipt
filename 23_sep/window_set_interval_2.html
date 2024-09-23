@@ -6,13 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="demo">Hello</h1>
+
     <script>
-        let name=["raj","sonu", "pankaj","raju"];
-        console.log(name);
-        console.log(typeof(name));
-        let mynm = name.join(" * ");
-        console.log(mynm);
-        console.log(typeof(mynm));
+        function myDate(){
+            const d= new Date();
+            document.getElementById("demo").innerHTML=d;
+
+        }
+
+        setInterval(myDate ,1000);
     </script>
 </body>
 </html>

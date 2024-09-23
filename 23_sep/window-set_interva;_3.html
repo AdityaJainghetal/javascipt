@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Welcome</h1>
+    <script>
+
+        function MyDate(){
+            
+            document.getElementById("demo").innerHTML="cxybrom"
+        }
+
+        var myInt =setInterval(myDate , 1000)
+
+        function myStop(){
+            clearInterval(myInt);
+        }
+
+
+    </script>
+
+    <button onclick="myStop()">click here</button>
+</body>
+</html>
