@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">welcome to cybrom</h1>
+
+
+    <script>
+        var  myInt;
+        function myFun(){
+            document.getElementById("demo").innerHTML="happy birthday";
+        }
+
+      myInt= setTimeout(myFun ,5000);
+
+
+      function Stopnow(){
+        clearTimeout(myInt)
+      }
+    </script>
+    <button onclick="Stopnow()">click here</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="img1" src="4k-beautiful-colorful-abstract-wallpaper-photo.jpg" alt="">
+    </div>
+
+    <script>
+        let mywidth = 10;
+        let myInt;
+
+        function myImg() {
+            let img = document.getElementById("img1");
+            img.src = "images.jpeg"; 
+            img.style.width = mywidth + "px"; 
+            mywidth += 15;
+        }
+
+        function startNow() {
+            myInt = setInterval(myImg, 1000);
+        }
+
+        function stopNow() {
+            clearInterval(myInt);
+        }
+    </script>
+
+    <button onclick="startNow()">click here</button>
+    <button onclick="stopNow()">stop here</button>
+</body>
+</html>
