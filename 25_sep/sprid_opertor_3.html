@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student={
+            "rollno": 121,
+            "name": "Aditya",
+            "city": "Bhopal"
+        }
+
+        const studentdetial={
+            "class":"B.Tec",
+            "Grade": "A",
+            "result":"pass"
+        };
+
+        const mystu = {...student, ...studentdetial };
+        console.log(mystu);
+    </script>
+</body>
+</html>
