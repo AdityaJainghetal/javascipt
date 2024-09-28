@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<script>
+     let myw;
+        function myOpen(){
+            myw= window.open("index.html" ," ", "500", "400", "width-600, height=500")
+        }
+        function myClose(){
+            myw.myClose();
+        }
+</script>
+<body bgcolor="yellow">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+ 
+    
+    <hr size="4" color="red"></hr>
+
+    <h1> about open</h1>
+
+    <button onclick="window.myOpen()">Open window</button>
+    <button onclick="window.Close()">Close window</button>    
+    
+</body>
+</html>

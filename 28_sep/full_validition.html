@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body bgcolor="pink">
+
+    <script>
+        function validation() {
+            let name = document.f1.nm.value;
+            let age = document.f1.age.value;
+            let age1 = parseInt(age);  
+            let pass1 = document.f1.pass1.value;
+            let pass2 = document.f1.pass2.value;
+            let fees = document.f1.fs.value;
+            let fees1 = parseInt(fees);
+
+            // Validate name
+            if (name == "") {
+                alert("Please enter your name");
+                document.f1.nm.focus();
+                return false;
+            }
+
+            // Validate age
+            if (age == "") {
+                alert("Please enter your age");
+                document.f1.age.focus();
+                return false;
+            }
+
+            // Check if age is a number
+            if (isNaN(age1)) {
+                alert("Please enter a numeric value for age");
+                document.f1.age.value = "";
+                document.f1.age.focus();
+                return false;
+            }
+
+            // Validate password
+            if (pass1 == "") {
+                alert("Please enter a password");
+                document.f1.pass1.focus();
+                return false;
+            }
+
+            if (pass2 == "") {
+                alert("Please re-enter your password");
+                document.f1.pass2.focus();
+                return false;
+            }
+
+            // Check if passwords match
+            if (pass1 != pass2) {
+                alert("Passwords do not match. Please try again.");
+                document.f1.pass1.value = "";
+                document.f1.pass2.value = "";
+                document.f1.pass1.focus();  
+                return false;
+            }
+
+            // Validate fees
+            if (fees == "") {
+                alert("Please enter the fees");
+                document.f1.fs.focus();
+                return false;
+            }
+
+            if (isNaN(fees1)) {
+                alert("Please enter a numeric value for fees");
+                document.f1.fs.value = "";
+                document.f1.fs.focus();
+                return false;
+            }
+
+            if (fees1 < 45000) {
+                alert("Fees must be equal to or more than 45000");
+                document.f1.fs.value = "";
+                document.f1.fs.focus();
+                return false;
+            }
+
+            return true;  // Form is valid
+        }
+    </script>
+
+    <h1>Application Form</h1>
+    <form name="f1" method="post" action="save.html" onsubmit="return validation()">
+        Enter name: <input type="text" name="nm"><br>
+        Enter age: <input type="text" name="age"><br>
+        Enter password: <input type="password" name="pass1"><br>
+        Re-enter password: <input type="password" name="pass2"><br>
+        Enter fees: <input type="text" name="fs">
+        (Note: Fees must be equal to or more than 45000/-)<br>
+        <button type="submit">Save Data</button>
+    </form>
+    
+</body>
+</html>
