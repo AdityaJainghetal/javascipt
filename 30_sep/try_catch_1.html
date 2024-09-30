@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your number1 : <input type="text" name="" id="no1">
+    <br>
+    Enter your number2 : <input type="text" name="" id="no2">
+    <br>
+     <h1 id="ans">welcome</h1>
+     <h1 id="ans1">welcome</h1>
+    <button onclick="display()">Click here</button>
+
+
+
+    <script>
+        function display(){
+            let a = document.getElementById("no1").value;
+               let b =  document.getElementById("no2").value;
+            try{
+               
+                
+            if(isNaN(a) || isNaN(b)){
+                throw "string can not declare ";
+            }
+            else{
+            
+            if(b==0){
+                throw "is not a number";
+            }
+            else{
+                let c = a/b;
+                document.getElementById("ans").innerHTML = "Result " + c;
+            }
+        }
+        }
+            catch(error){
+                document.getElementById("ans").innerHTML = error;
+            }
+
+            finally{
+                let c = a/b;
+                document.getElementById("ans1").innerHTML = "Result " + c;
+                // document.getElementById("ans1").innerHTML = c;
+            }
+        }
+    </script>
+</body>
+</html>
