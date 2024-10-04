@@ -2,7 +2,7 @@ document.getElementById("btn1").addEventListener("click",dataSave);
 document.getElementById("btn2").addEventListener("click",dataDisplay);
 
 function dataSave(){
-    let roll = document.getElementById("rno").value
+    let rollno = document.getElementById("rno").value
     let name=document.getElementById("nm").value;
     let city = document.getElementById('ct').value;
     let fees =document.getElementById("fs").value;
@@ -11,13 +11,13 @@ function dataSave(){
     fetch(api ,{
         method: 'POST',
         headers:{
-            "Content-Type": "application/json",
+            'Content-Type' : 'application/json'
         },
         body: JSON.stringify({
             "rollno": rollno,
-            "name":name,
+            "name": name,
             "city": city,
-            "fees":fees
+            "fees": fees
 
             })
         }).then((res)=>{

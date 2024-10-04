@@ -1,32 +1,46 @@
 {
-    "student" : [
-        {
-            "id" : 1,
-            "rollno" : 121,
-            "name": "sachin",
-            "city": "bhopal",
-            "fees": 45600
-        },
-        {
-            "id" : 2,
-            "rollno" : 122,
-            "name": "sandeep",
-            "city": "Indore",
-            "fees": 45600
-        },
-        {
-            "id" : 3,
-            "rollno" : 123,
-            "name": "aditya",
-            "city": "bhopal",
-            "fees": 45600
-        },
-        {
-            "id" : 4,
-            "rollno" : 124,
-            "name": "vishal",
-            "city": "bhopal",
-            "fees": 45600
-        }
-    ]
+  "student": [
+    {
+      "id": "1",
+      "rollno": 121,
+      "name": "sachin",
+      "city": "bhopal",
+      "fees": 45600
+    },
+    {
+      "id": "2",
+      "rollno": 122,
+      "name": "sandeep",
+      "city": "Indore",
+      "fees": 45600
+    },
+    {
+      "id": "3",
+      "rollno": 123,
+      "name": "aditya",
+      "city": "bhopal",
+      "fees": 45600
+    },
+    {
+      "id": "4",
+      "rollno": 124,
+      "name": "vishal",
+      "city": "bhopal",
+      "fees": 45600
+    },
+    {
+      "id": "78e4",
+      "rollno": "125",
+      "name": "aditya",
+      "city": "bhopal",
+      "fees": "2000000"
+    },
+    {
+      "id": "4468",
+      "rollno": "",
+      "name": "",
+      "city": "",
+      "fees": ""
+    }
+  ]
 }
