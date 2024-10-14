@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function display(){
+            let file="index.txt";
+            fetch(file).then((x)=>x.text()).then((y)=>document.getElementById('demo').innerHTML=y);
+        }
+    </script>
+    <p id="demo">Welcome </p>
+    <button onclick="display()">click here</button>
 </body>
 </html>

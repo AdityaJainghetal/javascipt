@@ -1,0 +1,3 @@
+The FetchAPI is a built-in method that takes in one compulsory parameter: the endpoint (API URL). While the other parameters may not be necessary when making a GET request, they are very useful for the POST HTTP request.
+
+The second parameter is used to define the body (data to be sent) and type of request to be sent, while the third parameter is the header that specifies the type of data you will send, for example JSON.
