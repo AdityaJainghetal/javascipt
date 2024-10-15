@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+
+<script>
+     $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","yellow")
+            })
+
+
+            $("input").blur(function(){
+                $(this).css("background-color","white")
+            })
+        })
+
+</script>
+<body>
+    Enter name : <input type="text" id="">
+    <br>
+    Enter city : <input type="text" id="">
+    <br>
+    Enter class : <input type="text" id="">
+    <br>
+    Enter mobile : <input type="text" id="">
+    <br>
+</body>
+</html>

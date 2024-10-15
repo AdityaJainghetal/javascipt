@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    
+
+    <script>
+        $(document).ready(function(){
+            $("shw").click(function(){
+                $(this).css("background-color","yellow")
+            })
+
+
+            $("input").blur(function(){
+                $(this).css("background-color","white")
+            })
+        })
+    </script>
+    <button id="shw">click here</button>
+    <button id="hid">click here</button>
+</body>
+</html>

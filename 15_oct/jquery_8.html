@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <style>
+    #box{
+        width: 300px;
+        padding: 20px;
+        border: 3px solid red;
+        background-color: pink;
+        /* display: none; */
+    }
+</style>
+
+<script>
+       $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    left : '400px',
+                    opacity: '0.5',
+                    height: '300px',
+                    width: '300px'
+                },3000);     
+                 
+            })
+        })
+</script>
+
+<button>Start animation</button>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, vitae?</p>
+<div style="background: #98bf21; height: 100px; width: 100px; position: absolute;"></div>
+</body>
+</html>
