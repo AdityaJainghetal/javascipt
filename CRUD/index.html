@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            display: none;
+            position: absolute;
+            top: 280px;
+            left: 400px;
+            background-color: antiquewhite;
+            padding: 20px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body onload="show()">
+    <form class="form">
+        <input type="text" id="id" placeholder="Enter id"><br>
+        <input type="text"  id="userid" placeholder="Enter userid"><br>
+        <input type="text" id="title" placeholder="Enter title"><br>
+        <input type="text" id="body" placeholder="Enter body"><br>
+        <button onclick="finalupdate()">update</button>
+    </form>
+
+    <table id="output" border="2"></table>
+    <script src="crud.js"></script>
+    
+</body>
+</html>
